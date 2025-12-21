@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 html {
   min-height: 100%;
-  background: var(--bg-gradient);
+  background: var(--primary);
 }
 
 :root {
   --bg-dark: #0b021a;
-  --bg-gradient: radial-gradient(circle at top, #2a0a5e, #0b021a);
+  /*--bg-gradient: radial-gradient(circle at top, #2a0a5e, #0b021a);*/
   --primary: #0D0027;
   --button: #3D00B7;
   --text-main: #ffffff;
