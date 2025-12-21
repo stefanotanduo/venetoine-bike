@@ -45,11 +45,13 @@ body {
   font-size: 2rem;
   font-weight: 800;
   letter-spacing: 1px;
+  margin-bottom: 0px;
 }
 
 .intro {
   color: var(--text-muted);
   font-size: 13px;
+  margin-top: -6px;
 }
 
 /* SEZIONI */
@@ -207,4 +209,8 @@ body {
 .btn-inverse:active {
   background: var(--button);
   color: #ffffff;
+}
+
+.compact-list p {
+  margin-bottom: 6px;
 }
