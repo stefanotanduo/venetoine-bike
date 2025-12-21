@@ -66,14 +66,18 @@ body {
 
 /* BOTTONI */
 .btn {
-  display: inline-block;
-  padding: 12px 24px;
+  display: block;
+  width: 100%;
+  padding: 14px 24px;
   background: var(--primary);
   color: #fff;
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   border-radius: 999px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.9rem;
+  text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -85,6 +89,12 @@ body {
 .btn.large {
   padding: 14px 32px;
   font-size: 1rem;
+}
+
+.btn:active {
+  background: #ffffff;
+  color: var(--primary);
+  transform: scale(0.98);
 }
 
 /* PLACEHOLDER IMMAGINE */
@@ -100,4 +110,45 @@ body {
 .cta {
   text-align: center;
   margin-top: 32px;
+}
+
+/* PAGINA CHI SONO */
+.page-left {
+  text-align: left;
+}
+
+.page-left .hero,
+.page-left .section {
+  text-align: left;
+}
+
+.page-left .hero a {
+  display: block;
+  width: fit-content;
+  margin-bottom: 24px;
+}
+
+.tagline {
+  margin-top: 32px;
+  font-size: 26px;           /* stesso corpo del testo */
+  font-weight: 500;          /* Medium */
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.85);
+  text-align: left;
+}
+
+.signature {
+  margin-top: 64px;
+  padding-top: 24px;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 11px;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.signature .name,
+.signature .brand,
+.signature .qualification {
+  font-size: inherit;
+  font-weight: 400;
 }
