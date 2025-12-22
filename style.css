@@ -171,6 +171,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
   gap: 16px;
+  padding: 0 0px;
 }
 
 .itinerary-grid .btn {
