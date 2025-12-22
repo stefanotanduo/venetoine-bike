@@ -175,12 +175,19 @@ body {
 
 .itinerary-grid .btn {
   border-radius: 0;
-  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-transform:none;
+  text-transform: none;
   font-size: 18px;
+}
+
+/* Forza tutti gli elementi a essere quadrati */
+.itinerary-grid > * {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .coming-soon {
@@ -191,7 +198,6 @@ body {
 }
 
 .itinerary-grid .coming-soon {
-  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
