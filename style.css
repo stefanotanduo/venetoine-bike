@@ -197,6 +197,24 @@ body {
   justify-content: center;
 }
 
+.itinerary-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image-caption {
+  margin-top: 4px;
+  font-size: 12px;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.8;
+}
+
+
 .coming-soon {
   display: flex;
   align-items: center;
