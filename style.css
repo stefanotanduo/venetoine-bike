@@ -169,32 +169,26 @@ body {
 
 /* PAGINA ITINERARI */
 .itinerary-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 @media (min-width: 600px) {
   .itinerary-grid {
-    grid-template-columns: repeat(3, 1fr);
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
   }
 }
 
 .itinerary-grid .btn {
-  border-radius: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border-radius: 999px;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 16px;
   text-transform: none;
-  font-size: 18px;
-}
-
-/* Forza tutti gli elementi a essere quadrati */
-.itinerary-grid > * {
-  aspect-ratio: 1 / 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 16px;
 }
 
 .itinerary-image {
