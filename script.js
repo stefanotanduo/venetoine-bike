@@ -1,11 +1,23 @@
 const track = document.querySelector('.carousel-track');
 const slides = document.querySelectorAll('.carousel-slide');
+const prevBtn = document.querySelector('.carousel-arrow.left');
+const nextBtn = document.querySelector('.carousel-arrow.right');
 
 let index = 0;
 let startX = 0;
 let currentX = 0;
 let isDragging = false;
 let interval;
+
+
+prevBtn.addEventListener('click', () => {
+  prevSlide();
+});
+
+nextBtn.addEventListener('click', () => {
+  nextSlide();
+});
+
 
 /* ---------- FUNZIONI ---------- */
 
@@ -23,19 +35,19 @@ function prevSlide() {
   updateCarousel();
 }
 
-function startAutoSlide() {
+/*function startAutoSlide() {
   interval = setInterval(nextSlide, 4000);
 }
 
 function stopAutoSlide() {
   clearInterval(interval);
-}
+}*/
 
 /* ---------- AUTO ---------- */
 
-startAutoSlide();
+// startAutoSlide();
 
-/* ---------- TOUCH EVENTS ---------- */
+/* ---------- TOUCH EVENTS ---------- 
 
 track.addEventListener('touchstart', (e) => {
   stopAutoSlide();
@@ -62,3 +74,4 @@ track.addEventListener('touchend', () => {
   isDragging = false;
   startAutoSlide();
 });
+*/
