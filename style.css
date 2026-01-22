@@ -279,6 +279,7 @@ body {
 
   display: inline-block;
   padding: 6px 10px;
+  white-space: nowrap;
 
   background: rgba(0, 0, 0, 0.5);
   color: var(--text-main);
